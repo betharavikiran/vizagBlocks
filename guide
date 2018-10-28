@@ -1,0 +1,28 @@
+// Add places to Block Chain
+
+// truffle compile
+// truffle migrate or truffle migrate --reset
+
+// truffle console
+
+// After deploying the contract to block chain
+
+// a get the contract address
+// get the ABI of the contract and update setup file.
+
+
+truffle(development)>  VizagBlocks.deployed().then(function(i) {i.addPlace('Kailasa giri', 'kailasa_giri', 'places0001').then(function(f) {console.log(f)})});
+truffle(development)>  VizagBlocks.deployed().then(function(i) {i.addPlace('Vuda park', 'vuda_park', 'places0002').then(function(f) {console.log(f)})});
+truffle(development)>  VizagBlocks.deployed().then(function(i) {i.addPlace('Simhachalam', 'simhachalam', 'places0003').then(function(f) {console.log(f)})});
+truffle(development)>  VizagBlocks.deployed().then(function(i) {i.addPlace('Borra caves', 'borra_caves', 'places0004').then(function(f) {console.log(f)})});
+truffle(development)>  VizagBlocks.deployed().then(function(i) {i.addPlace('Rushikonda Beach', 'rushikonda_beach', 'places0005').then(function(f) {console.log(f)})});
+truffle(development)>  VizagBlocks.deployed().then(function(i) {i.addPlace('Araku Valley', 'araku_valley', 'places0006').then(function(f) {console.log(f)})});
+truffle(development)>  VizagBlocks.deployed().then(function(i) {i.addPlace('Visakha Museum', 'visakha_museum', 'places0007').then(function(f) {console.log(f)})});
+truffle(development)>  VizagBlocks.deployed().then(function(i) {i.addPlace('Tenneti Park', 'tenneti_park', 'places0008').then(function(f) {console.log(f)})});
+
+
+// check
+truffle(development)>  VizagBlocks.deployed().then(function(i) {i.getPlace.call(1).then(function(f) {console.log(f)})})
+
+truffle(development)>  VizagBlocks.deployed().then(function(instance) { app = instance })
+truffle(development)> app.getPlace(0)
